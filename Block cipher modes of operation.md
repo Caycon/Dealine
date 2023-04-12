@@ -15,7 +15,7 @@
 - Mỗi phương thức có ưu điểm và nhược điểm riêng, và việc lựa chọn phương thức thích hợp phụ thuộc vào yêu cầu của ứng dụng cụ thể, bao gồm tính bảo mật, tính hiệu suất, tính tiện dụng, và khả năng mở rộng.
 -------
 ## ECB (Electronic Codebook):
-- ECB (Electronic Codebook) là một phương thức hoạt động của block cipher, trong đó mỗi khối dữ liệu đầu vào được mã hóa độc lập với cùng một khóa, mà không có sự phụ thuộc vào các khối dữ liệu hay kết quả mã hóa của các khối trước đó. Cơ chế hoạt động của ECB được mô tả như sau:
+- `ECB (Electronic Codebook)` là một phương thức hoạt động của block cipher, trong đó mỗi khối dữ liệu đầu vào được mã hóa độc lập với cùng một khóa, mà không có sự phụ thuộc vào các khối dữ liệu hay kết quả mã hóa của các khối trước đó. Cơ chế hoạt động của ECB được mô tả như sau:
 
   - Chia dữ liệu thành các khối con: Dữ liệu đầu vào được chia thành các khối con có cùng kích thước với khối mã hóa của block cipher. Các khối con này độc lập với nhau và không có sự phụ thuộc vào các khối dữ liệu hay kết quả mã hóa của các khối trước đó.
 
@@ -29,7 +29,7 @@
 ##### Tìm hiểu kỹ hơn về `ECB` [tại đây](https://www.techtarget.com/searchsecurity/definition/Electronic-Code-Book)
 -------
 ## CBC (Cipher Block Chaining):
-- CBC (Cipher Block Chaining) là một trong những phương thức hoạt động của block cipher modes of operation, được sử dụng để mã hóa dữ liệu theo cách thức chuỗi các khối dữ liệu lại với nhau. Trong CBC, mỗi khối dữ liệu được mã hóa trước khi được kết hợp với khối dữ liệu trước đó trong chuỗi, từ đó tạo thành khối dữ liệu đầu vào cho khối dữ liệu tiếp theo.
+- `CBC (Cipher Block Chaining)` là một trong những phương thức hoạt động của block cipher modes of operation, được sử dụng để mã hóa dữ liệu theo cách thức chuỗi các khối dữ liệu lại với nhau. Trong CBC, mỗi khối dữ liệu được mã hóa trước khi được kết hợp với khối dữ liệu trước đó trong chuỗi, từ đó tạo thành khối dữ liệu đầu vào cho khối dữ liệu tiếp theo.
 
 - Cơ chế hoạt động của CBC được mô tả như sau:
 
@@ -51,7 +51,7 @@
 ##### Tìm hiểu kỹ hơn về `CBC` [tại đây](https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation#Cipher-block_chaining_(CBC)).  
 -------
 ## CFB (Cipher Feedback):
-- CFB (Cipher Feedback) là một trong các chế độ hoạt động của các thuật toán mã hóa khối (block cipher) trong mật mã học. Nó cho phép mã hóa các khối dữ liệu có kích thước nhỏ hơn kích thước khối đầu vào của thuật toán mã hóa khối, và cũng cho phép mã hóa đầu ra phụ thuộc vào các khối dữ liệu trước đó, tạo ra tính toàn vẹn (integrity) cho dữ liệu được mã hóa.
+- `CFB (Cipher Feedback)` là một trong các chế độ hoạt động của các thuật toán mã hóa khối (block cipher) trong mật mã học. Nó cho phép mã hóa các khối dữ liệu có kích thước nhỏ hơn kích thước khối đầu vào của thuật toán mã hóa khối, và cũng cho phép mã hóa đầu ra phụ thuộc vào các khối dữ liệu trước đó, tạo ra tính toàn vẹn (integrity) cho dữ liệu được mã hóa.
 
 - Cơ chế hoạt động của CFB là:
 
@@ -69,7 +69,7 @@
 ##### Tìm hiểu kỹ hơn về CFB [tại đây](https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation)
 -------
 ### OFB (Output Feedback):
-- OFB (Output Feedback) là một trong những chế độ hoạt động của mật mã học đối xứng, được sử dụng để mã hóa dữ liệu trong quá trình truyền thông an toàn. Cơ cấu hoạt động của OFB dựa trên việc sử dụng đầu ra của một khối mã hóa trước đó để tạo ra một luồng mã hóa (keystream), sau đó được XOR (hoặc phép toán logic XOR) với dữ liệu gốc để tạo ra dữ liệu mã hóa.
+- `OFB (Output Feedback)` là một trong những chế độ hoạt động của mật mã học đối xứng, được sử dụng để mã hóa dữ liệu trong quá trình truyền thông an toàn. Cơ cấu hoạt động của OFB dựa trên việc sử dụng đầu ra của một khối mã hóa trước đó để tạo ra một luồng mã hóa (keystream), sau đó được XOR (hoặc phép toán logic XOR) với dữ liệu gốc để tạo ra dữ liệu mã hóa.
 
 - Dưới đây là cơ cấu hoạt động của OFB:
 
@@ -87,7 +87,7 @@
 ##### Tìm hiểu kỹ hơn về OFB [tại đây](https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation)
 -------
 ## CTR (Counter):
-- CTR (Counter) là một trong những chế độ hoạt động của mật mã học đối xứng, được sử dụng để mã hóa dữ liệu trong quá trình truyền thông an toàn. Cơ cấu hoạt động của CTR dựa trên việc sử dụng một bộ đếm (counter) để tạo ra một chuỗi giá trị đơn điệu (monotonically increasing) để làm "khóa" (key) cho việc mã hóa.
+- `CTR (Counter)` là một trong những chế độ hoạt động của mật mã học đối xứng, được sử dụng để mã hóa dữ liệu trong quá trình truyền thông an toàn. Cơ cấu hoạt động của CTR dựa trên việc sử dụng một bộ đếm (counter) để tạo ra một chuỗi giá trị đơn điệu (monotonically increasing) để làm "khóa" (key) cho việc mã hóa.
 
 - Dưới đây là cơ cấu hoạt động của CTR:
 
